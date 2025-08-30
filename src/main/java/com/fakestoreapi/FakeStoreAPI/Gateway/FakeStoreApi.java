@@ -9,5 +9,6 @@ import java.util.List;
 
 public interface FakeStoreApi {
     @GET("products/category")
-    Call<CategoryResponseDTO> getAllProducts();
+    Call<CategoryResponseDTO> getAllCategories();
+
 }
