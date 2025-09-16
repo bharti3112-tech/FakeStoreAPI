@@ -1,23 +1,13 @@
 package com.fakestoreapi.FakeStoreAPI.DTO;
 
-import lombok.Builder;
+import lombok.*;
 
 @Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class CategoryDTO {
+    private Long id;
     private String name;
-
-    public CategoryDTO() {
-    }
-
-    public CategoryDTO(String name) {
-        this.name = name;
-    }
-
-    public String getName(){
-        return this.name;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
 }

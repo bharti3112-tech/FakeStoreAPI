@@ -8,6 +8,7 @@
 
 package com.fakestoreapi.FakeStoreAPI.DTO;
 
+import com.fakestoreapi.FakeStoreAPI.entity.Category;
 import lombok.*;
 
 @Getter
@@ -15,16 +16,16 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ProductDTO {
-	private String image;
-	private String color;
-	private int price;
-	private String description;
-	private int discount;
-	private String model;
-	private Long id;
-	private String title;
-	private String brand;
-	private boolean popular;
-	private Long categoryId;
+public class ProductWithCategoryDTO {
+    private String image;
+    private String color;
+    private int price;
+    private String description;
+    private int discount;
+    private String model;
+    private Long id;
+    private String title;
+    private String brand;
+    private boolean popular;
+    private CategoryDTO category;
 }

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.util.List;
 
-@Service
+@Service("apiServices")
 public class CategoryServiceImpl implements CategoryService{
     private final FakeStoreAPIGateway fakeStoreAPIGateway;
     public  CategoryServiceImpl(FakeStoreAPIGateway fakeStoreAPIGateway){
@@ -16,5 +16,10 @@ public class CategoryServiceImpl implements CategoryService{
     @Override
     public List<CategoryDTO> getAllCategories() throws IOException {
        return  this.fakeStoreAPIGateway.getAllCategories();
+    }
+
+    @Override
+    public CategoryDTO createCategory(CategoryDTO categoryDTO){
+        return  null;
     }
 }
